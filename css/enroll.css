@@ -1,0 +1,175 @@
+body {
+  position: relative;
+}
+
+#enroll-content h3 {
+  font-weight: 500;
+  border-bottom: orange 3px solid;
+  padding-bottom: 3px;
+  display: table;
+}
+
+#enroll-content h3:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f122";
+  margin-right: 10px;
+}
+
+#enroll-content ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+#enroll-content ul li {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+#enroll-1 li:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f12f";
+  margin-right: 5px;
+}
+
+#enroll-2 li:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f11f";
+  margin-right: 5px;
+}
+
+#enroll-3 li:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f121";
+  margin-right: 5px;
+}
+
+div.enroll-2-content {
+  padding-left: 27px;
+}
+
+div.underline-input-container {
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px solid #007bff69;
+}
+
+span.underline-input {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #007bff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+input.underline {
+  width: 8em;
+  color: gray;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  /*border-bottom-color: hsla(185, 100%, 62%, 0.2);*/
+}
+
+input.underline:focus {
+  outline: none;
+}
+
+input.underline::placeholder {
+  color: #D3D3D3;
+}
+
+input.underline:focus ~ span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+input.underline:focus ~ button {
+  transition: all 0.5s ease;
+  transition-delay: 0.2s;
+  background-position: 0%;
+}
+
+button.underline-input {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  padding: 5px;
+  color: #007bff69;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #007bff, #007bff 50%, #007bff69 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+span.no-input, span.not-found, h5.found {
+  color: red;
+}
+
+div.col-12>div.list {
+  display: flex;
+  flex-direction: row;
+}
+
+div.col-12>div.list> *:last-child {
+  flex: 1;
+}
+
+div.file-list {
+  display: flex;
+  flex-direction: row;
+}
+
+div.file-list>a {
+  padding: 5px;
+}
+
+div.file-list>a:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f56d";
+  margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+  div.file-list {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,124 @@
+#intro-content ul {
+  list-style: none;
+}
+
+#intro-content ul.intro-detail li:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f192";
+  margin-right: 10px;
+}
+
+.intro-detail,.group-detail {
+  padding-left: 20px;
+}
+
+.group-detail p.title {
+  margin-bottom: 0 !important;
+}
+
+#members .tab-pane {
+  padding: 10px;
+}
+
+button.btn-fake {
+  background: none;
+  color: #007bff;
+  border: none; 
+  padding: 0!important;
+  font: inherit;
+  /*border is optional*/
+  /*border-bottom:1px solid #444; */
+  cursor: pointer;
+}
+
+button.btn-fake:hover {
+  color: #0056b3;
+  text-decoration: underline; 
+}
+
+#intro-content ul.admin-list {
+  list-style: none;
+  text-align: left;
+}
+
+#intro-content ul.admin-list li:before {
+  display: none;
+}
+
+#intro-content ul.admin-list ul{
+  padding-left: 25px;
+  list-style: circle;
+}
+
+.project-table .th, .project-table .td {
+  max-width: 350px;
+}
+
+.honor-table .th, .honor-table .td {
+  max-width: 250px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  margin-bottom: 15px;
+}
+
+.info-list li>i, .researchs>i {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 11px;
+  color: #525252;
+}
+
+.avatar {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@media (min-width: 576px){
+  .modal-xl {
+    max-width: 1000px;
+  }
+}
+
+.paper-table .th, .paper-table .td {
+  max-width: 500px;
+}
+
+.member-detail h5, .groups h5 {
+  border-bottom: orange 3px solid;
+  padding-bottom: 3px; 
+  display: table;
+}
+
+p.title {
+  margin-bottom: 3px;
+}
+
+#intro-2 .groups h5:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f10a";
+  margin-right: 5px;
+}

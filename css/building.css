@@ -1,0 +1,98 @@
+footer {
+  position:relative;
+}
+
+.main-structure {
+  position: absolute;
+  right: 5px;
+  top: -40px;
+  height: 45px;
+  width: 150px;
+  background-color: #153f8b;
+  border-radius: 5px;
+}
+
+.penthouse {
+  position: absolute;
+  right: 59px;
+  top: -15px;
+  height: 31px;
+  width: 31px;
+  transform: rotate(45deg);
+  background-color: orange;
+  border-radius: 5px;
+  border: 3px solid #153f8b;
+}
+
+.penthouse-window {
+  position: absolute;
+  right: 59px;
+  top: -15px;
+  height: 30px;
+  width: 30px;  
+}
+
+.frame-v {
+  position: absolute;
+  background-color: #153f8b;
+  right: 14px;
+  top: -2px;
+  height: 42px;
+  width: 3px;
+}
+
+.frame-h {
+  position: absolute;
+  background-color: #153f8b;
+  right: -3px;
+  top: 14px;
+  height: 3px;
+  width: 38px;
+}
+
+.window-diamond {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  height: 17px;
+  width: 17px;
+  transform: rotate(45deg);
+  background-color: orange;
+  border-radius: 5px;
+  border: 3px solid #153f8b;
+}
+
+.window-grid {
+  display: grid;
+  gap: 6px 5px;
+  grid-template-columns: 13px 13px 13px 30px 13px 13px 13px;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+.window-grid>.window {
+  background-color: orange;
+  height: 5px;
+  border-radius: 2px;
+}
+
+.sign {
+  position: absolute;
+  right: 62px;
+  top: 20px;
+  height: 8px;
+  width: 26px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+
+.dot {
+  position: absolute;
+  right: 8px;
+  top: 3px;
+  height: 2px;
+  width: 11px;
+  border-bottom: gold dotted 2px;
+}

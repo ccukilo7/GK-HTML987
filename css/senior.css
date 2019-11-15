@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Redacted";
+  src: url("redacted-font/redactedscript-regular-webfont.woff2") format("woff2"),
+       url("redacted-font/redactedscript-regular-webfont.woff") format("woff"),
+       url("redacted-font/redactedscript-regular-webfont.ttf") format("truetype");
+}
+
+ul.faq li {
+  display: flex;
+  flex-direction: row;
+}
+
+ul.faq li:nth-child(odd) {
+  padding-top: 10px;
+}
+
+ul.faq li:nth-child(odd)::before {
+  content: "問：";
+}
+
+ul.faq li:nth-child(even)::before {
+  content: "答：";
+}
+
+.tldr {
+  display: contents;
+}
+
+.award-content {
+  margin-left: 5px;
+  margin-top: 10px;
+  display: grid;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  .award-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  .award-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .award-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .award-content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+
+.award-congrat {
+  
+}
+
+.award-congrat::before {
+  display: contents;
+  content: "賀 ";
+}
+
+.award-congrat::after {
+  display: contents;
+  content: "榮獲 ";
+}
+
+.award-title, .award-detail {
+  font-family: Redacted;
+}
+
+.award-title {
+
+}
+
+.award-detail {
+  display: block;
+  color: #666666;
+}
+
+.circle-outline {
+  border-radius: 50%;
+  text-align: center;
+  color: #525252;
+}
+
+.circle-outline:before {
+  content: attr(data-num);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.lolipop-year>.circle-outline:before {
+  line-height: 48px;
+  font-size: 32px;
+}
+
+.lolipop-year>.circle-outline {
+  border: 2px solid #CC5800;
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.lolipop-month>.circle-outline:before {
+  line-height: 28px;
+  font-size: 15px;
+}
+
+.lolipop-month>.circle-outline {
+  border: 2px solid #FF6F00;
+  width: 30px;
+  height: 30px;
+}
+
+.vertical-line {
+  width: 2px;
+}
+
+.lolipop-year>.vertical-line {
+  height: calc(100% - 50px);
+  margin: 0 24px;
+  background-color: #CC5800;
+}
+
+.lolipop-month>.vertical-line {
+  height: calc(100% - 30px);
+  margin: 0 14px;
+  background-color: #FF6F00;
+}
+
+.annual-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.monthly-container {
+  padding-top: 55px;
+  margin-left: -20px;
+  display: grid;
+  grid-template-columns: 35px auto;
+}

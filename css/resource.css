@@ -1,0 +1,14 @@
+ul>h5:before, .tab-content li::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Flaticon";
+  content: "\f123";
+  margin-right: 3px;
+}
+
+ul>ul {
+  padding-left: 10px;
+}

@@ -1,0 +1,73 @@
+.exhibition-title h2, .exhibition-title h3 {
+  font-weight: bold;
+}
+
+.exhibition-title h2.blue-1, .exhibition-title h3.blue-1 {
+  color: #2f719d;
+}
+
+.exhibition-title h2.blue-2, .exhibition-title h3.blue-2 {
+  color: #359bbc;
+}
+
+.exhibition-logo {
+  max-height: 210px;
+  width: auto;
+}
+
+.exhibition-flex-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.exhibition-title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.exhibition-flex-content i {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  border: 2px solid #ffb23c;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 21px;
+  color: #525252;
+}
+
+.vertical-line {
+  border-left: 3px solid #ffb23c;
+  height: calc(100% - 50px);    
+  position: absolute;
+  width: 50px;
+  top: 50px;
+  left: 39px;
+}
+
+.vertical-line-dotted {
+  border-left: 3px dotted #ffb23c;
+  height: 50px;    
+  position: absolute;
+  width: 50px;
+  top: 0px;
+  left: 39px;
+}
+
+.detail-container {
+  padding-top: 9px;
+  flex: 1;
+}
+
+span.list-item {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.last-row {
+  height: 50px;
+}
