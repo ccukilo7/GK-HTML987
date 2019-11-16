@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="bulletin-info-viewport" content="width=device-width, initial-scale=1">
+  <title>國立中正大學 電機工程學系</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/building.css">
+  <link rel="stylesheet" href="css/news.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="top-header">
+      <div class="top-header-container">
+        <ul>
+          <li class="hidden"><a href="home.html">Chinese</a></li>
+          <li class=""><a href="home_en.html">ENGLISH</a></li>
+          <li><a href="home.html">CCUEE Home</a></li>
+          <li><a href="http://www.ccu.edu.tw/" target="_blank">CCU</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-container">
+      <div class="navbar-brand-container">
+        <img src="img/ccu.png" alt="" width="50" height="50" class="d-none d-md-block">
+        <div class="navbar-brand-desc">
+          <span style="font-size: 25px;">國立中正大學 <br class="d-sm-none">電機工程學系 (臨時網頁)</span>
+		  <span style="font-size: smaller;">Department of Electrical Engineering, <br class="d-sm-none">National Chung Cheng University</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-pills" role="tablist" id="main-tab-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" role="tab">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="intro.html" role="tab">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="resource.html" role="tab">Resources</a>
+            </li>
+<!-- 
+            <li class="nav-item">
+              <a class="nav-link" href="IEET.html">IEET工程認證</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Resources
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">校內資源</a>
+                <a class="dropdown-item" href="#">校外資源</a>
+                <a class="dropdown-item" href="#">表單下載</a>
+              </div>
+            </li>
+-->
+          </ul>
+        </div>
+      </nav>
+    </div>	
+</header>
+
+<main>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-lg-2">
+          <div class="filter-list" id="news-filter">
+            <a href="https://www.lib.ccu.edu.tw/" style="text-align: left;">Library</a>
+            <a href="http://kiki.ccu.edu.tw/" style="text-align: left;">System of Academic Affairs</a>
+            <a href="https://ecourse.ccu.edu.tw/" style="text-align: left;">Ecourse</a>
+            <a href="http://www.ccu.edu.tw/webmail.php" style="text-align: left;">Web Mail(CCU)</a>
+            <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fwww.google.com%2Fa%2Fcpanel%2Fee.ccu.edu.tw%2FDashboard&service=CPanel&hd=ee.ccu.edu.tw&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession" style="text-align: left;">Web Mail(EE)</a>
+            <a href="http://roombooking.ee.ccu.edu.tw/default.php" style="text-align: left;">Reserved the meeting room</a>
+          </div>
+        </div>
+		
+        <div class="col-md-9 col-lg-10 tab-content" id="bulletin">
+          <div class="row" id="bulltein-board">
+		  
+			<div class="col-12 mb-3 bulletin-office">
+			<a class="bulletin pinned" href="exhibition.html" role="tab">108.11.20電機系與通訊系專題展網頁相關資訊</a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-11-13</li>
+					</ul>
+				</div>
+            </div>		  
+			<div class="col-12 mb-3 bulletin-office">
+              <a class="bulletin pinned" href="enroll.html#enroll-2" role="tab">109 學年度電機系碩士班甄試入學口試時間表</a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-11-11</li>
+					</ul>
+				</div>
+			</div>			
+			<div class="col-12 mb-3 bulletin-office">
+              <a href="#bulletin-detail" class="bulletin" data-toggle="modal" data-target="#bulletin-detail">停電通知～本校配合台電公司108年6月29日星期六（早上8時至20時）全校停電 </a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-06-28</li>
+						<li class="bulletin-info-view" >21134</li>
+					</ul>
+				</div>
+            </div>
+            <div class="col-12 mb-3 bulletin-office">
+              <a href="#bulletin-detail" class="bulletin" data-toggle="modal" data-target="#bulletin-detail">工學院跨領域專題成員招募 </a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-06-26</li>
+						<li class="bulletin-info-view" >39</li>
+					</ul>
+				</div>
+            </div>
+            <div class="col-12 mb-3 bulletin-office">
+              <a href="#bulletin-detail" class="bulletin" data-toggle="modal" data-target="#bulletin-detail">電機系網頁設計競賽，報名開始囉～至6/20止唷 </a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-06-10</li>
+						<li class="bulletin-info-view" >234</li>
+					</ul>
+				</div>
+            </div>
+            <div class="col-12 mb-3 bulletin-office">
+              <a href="#bulletin-detail" class="bulletin" data-toggle="modal" data-target="#bulletin-detail">電機系誠徵兼任講師</a>
+				<div align="right">
+					<ul id="Exa2" > 
+						<li class="bulletin-info-date">2019-06-03</li>
+						<li class="bulletin-info-view" >109</li>
+					</ul>
+				</div>
+            </div>
+            <div class="col-12 mb-3 bulletin-office">
+				<a href="#bulletin-detail" class="bulletin" data-toggle="modal" data-target="#bulletin-detail">107學年度第2學期碩、博士班研究生學位考試注意事項 </a>
+				<div align="right">
+					<ul id="Exa2">
+						<li class="bulletin-info-date">2019-05-22</li>
+						<li class="bulletin-info-view" >14110</li>
+					</ul>
+				</div>
+            </div>
+	
+          </div>
+        </div>
+    </div>
+  </div>
+</main>
+
+ 
+<footer>
+
+	<div class="main-structure">
+		<div class="penthouse"></div>
+		<div class="penthouse-window">
+			<div class="frame-v"></div>
+			<div class="frame-h"></div>
+			<div class="window-diamond"></div>
+		</div>
+		<div class="window-grid">			
+			<div class="window"></div><div class="window"></div><div class="window"></div><div class="wall"></div><div class="window"></div><div class="window"></div><div class="window"></div>
+			<div class="window"></div><div class="window"></div><div class="window"></div><div class="wall"></div><div class="window"></div><div class="window"></div><div class="window"></div>			
+			<div class="window"></div><div class="window"></div><div class="window"></div><div class="wall"></div><div class="window"></div><div class="window"></div><div class="window"></div>			
+			<div class="window"></div><div class="window"></div><div class="window"></div><div class="wall"></div><div class="window"></div><div class="window"></div><div class="window"></div>
+			<div class="window"></div><div class="window"></div><div class="window"></div><div class="wall"></div><div class="window"></div><div class="window"></div><div class="window"></div>
+		</div>
+		<div class="sign"><div class="dot"></div></div>
+	</div>
+	<div class="footer container-fluid">
+		<address>
+		<div class="row">
+			<div class="col">
+				<i class="fas fa-envelope-open-text"></i>
+				<a href="mailto:electric@ccu.edu.tw"> 信箱：electric@ccu.edu.tw</a>
+			</div>
+			<div class="col"><i class="fa fa-phone"></i><a href="tel:05272-0411#23201"> 電話：(05)272-0411#23201</a></div>
+			<div class="col"><i class="fas fa-fax"></i> 傳真：(05)272-0862</div>
+			<div class="col d-none d-sm-none d-md-block"></div>
+				
+		</div>
+		<div class="row col">
+			<i class="fa fa-location-arrow"></i>地址：<a href=https://goo.gl/maps/VhwFXerm4XmvWQov9 target="_blank" title="我們所在地">62102嘉義縣民雄鄉大學路一段168號中正大學電機系所辦公室</a>
+		</div>		
+		<div class="row d-none d-sm-none d-md-block" style="text-align:right;">感謝108級中正電機系莊雅博與楊子緯同學雛形設計</div>
+		</address>
+
+	</div>
+</footer>
+    
+</body>
+</html>
