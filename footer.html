@@ -20,7 +20,11 @@
 	<link rel="stylesheet" href="css/exhibition.css">
 </head>
 <body>
-
+	<script>
+	$(function () {
+		$('#copy_from').clone().appendTo('#copy_to');
+	});
+	</script>
 
 <footer>
 	<div class="main-structure">
@@ -29,30 +33,23 @@
 	<div class="footer container-fluid">
 		<address>
 			<div class="row">
-				<div class="d-none d-md-block">
-					<div class="col">
-						<i class="fas fa-envelope-open-text"></i>
-						<a href="mailto:electric@ccu.edu.tw"> 信箱：electric@ccu.edu.tw</a>
-					</div>
-					<div class="col"><i class="fa fa-phone"></i><a href="tel:05272-0411#23201"> 電話：(05)272-0411#23201</a></div>
-					<div class="col"><i class="fas fa-fax"></i> 傳真：(05)272-0862</div>
-					<div class="col d-none d-sm-none d-md-block"></div>
-					<div class="col">
-						<i class="fa fa-location-arrow"></i> 地址：<a href=https://goo.gl/maps/VhwFXerm4XmvWQov9 target="_blank" title="我們所在地">62102嘉義縣民雄鄉大學路一段168號中正大學電機系所辦公室</a>
-					</div>
+				<div class="d-none d-md-block" >
+					<div id="copy_from">
+						<div class="col">
+							<i class="fas fa-envelope-open-text"></i>
+							<a href="mailto:electric@ccu.edu.tw"> 信箱：electric@ccu.edu.tw</a>
+						</div>
+						<div class="col"><i class="fa fa-phone"></i><a href="tel:05272-0411#23201"> 電話：(05)272-0411#23201</a></div>
+						<div class="col"><i class="fas fa-fax"></i> 傳真：(05)272-0862</div>
+						<div class="col d-none d-sm-none d-md-block"></div>
+						<div class="col">
+							<i class="fa fa-location-arrow"></i> 地址：<a href=https://goo.gl/maps/VhwFXerm4XmvWQov9 target="_blank" title="我們所在地">62102嘉義縣民雄鄉大學路一段168號中正大學電機系所辦公室</a>
+						</div>
 				</div>
-
+				</div>
 				<div class="d-md-none">
-					<div>
-						<i class="fas fa-envelope-open-text"></i>
-						<a href="mailto:electric@ccu.edu.tw"> 信箱：electric@ccu.edu.tw</a>
-					</div>
-					<div><i class="fa fa-phone"></i><a href="tel:05272-0411#23201"> 電話：(05)272-0411#23201</a></div>
-					<div><i class="fas fa-fax"></i> 傳真：(05)272-0862</div>
-					<div>
-						<i class="fa fa-location-arrow"></i> 地址：<a href=https://goo.gl/maps/VhwFXerm4XmvWQov9 target="_blank" title="我們所在地">62102嘉義縣民雄鄉大學路一段168號<p style="margin-left: 4.2em;">中正大學電機系所辦公室</p></a>
-					</div>
-				</div>				
+					<div id="copy_to" \>
+				</div>
 			</div>
 		<address>
 	</div>
@@ -60,4 +57,3 @@
 
 </body>
 </html>
-
